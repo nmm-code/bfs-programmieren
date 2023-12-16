@@ -1,0 +1,4 @@
+program : 1 Vorgekommen
+begin : 2 Vorgekommen
+writeln : 1 Vorgekommen
+procedure : 0 Vorgekommen

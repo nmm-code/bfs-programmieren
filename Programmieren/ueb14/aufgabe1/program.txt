@@ -1,0 +1,10 @@
+program UEB3_A2
+function fakul(n:word):word;
+begin
+if y=0 then fakul:=1
+       else fakul:=fakul(n-1)*n;
+end;
+
+begin
+writeln(fakul(5));
+end.

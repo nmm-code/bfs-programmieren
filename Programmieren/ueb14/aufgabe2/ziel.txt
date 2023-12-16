@@ -1,0 +1,34 @@
+program a;
+procedure d;
+begin
+  writeln('D');
+  end;
+procedure c;
+procedure d;
+begin
+  writeln('D');
+  end;
+begin
+  write('C');
+  d
+  end;
+procedure b;
+procedure d;
+begin
+  writeln('D');
+  end;
+begin
+  write('B');
+  d;
+  c
+  end;
+begin
+  writeln('A');
+  b;
+  writeln('A');
+  b;
+  writeln('A');
+  d;
+  readln;
+end.
+

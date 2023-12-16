@@ -1,0 +1,63 @@
+object FEingabe: TFEingabe
+  Left = 1380
+  Height = 194
+  Top = 459
+  Width = 212
+  Caption = 'Eingabe'
+  ClientHeight = 174
+  ClientWidth = 212
+  Menu = MenuMain
+  LCLVersion = '2.0.12.0'
+  object LEArtnummer: TLabeledEdit
+    Left = 8
+    Height = 23
+    Top = 24
+    Width = 186
+    EditLabel.Height = 15
+    EditLabel.Width = 186
+    EditLabel.Caption = 'Artikelnummer:'
+    EditLabel.ParentColor = False
+    EditLabel.ParentFont = False
+    EditLabel.Font.Style = [fsBold]
+    TabOrder = 0
+  end
+  object LELagerort: TLabeledEdit
+    Left = 8
+    Height = 23
+    Top = 72
+    Width = 186
+    EditLabel.Height = 15
+    EditLabel.Width = 186
+    EditLabel.Caption = 'Lagerort'
+    EditLabel.ParentColor = False
+    EditLabel.ParentFont = False
+    EditLabel.Font.Style = [fsBold]
+    TabOrder = 1
+  end
+  object LEBezeichner: TLabeledEdit
+    Left = 8
+    Height = 23
+    Top = 120
+    Width = 186
+    EditLabel.Height = 15
+    EditLabel.Width = 186
+    EditLabel.Caption = 'Bezeichner'
+    EditLabel.ParentColor = False
+    EditLabel.ParentFont = False
+    EditLabel.Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 2
+  end
+  object MenuMain: TMainMenu
+    Left = 284
+    Top = 28
+    object MenuOk: TMenuItem
+      Caption = 'Ok'
+      OnClick = MenuOkClick
+    end
+    object MenuX: TMenuItem
+      Caption = ' X  '
+      OnClick = MenuXClick
+    end
+  end
+end

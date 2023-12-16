@@ -1,0 +1,59 @@
+object FMain: TFMain
+  Left = 1599
+  Height = 240
+  Top = 415
+  Width = 306
+  Caption = 'Erp'
+  Menu = MenuMain
+  OnCreate = FormCreate
+  OnResize = FormResize
+  LCLVersion = '2.0.10.0'
+  object MenuMain: TMainMenu
+    Left = 144
+    Top = 96
+    object MenuServer: TMenuItem
+      Caption = 'Server'
+      object MenuAdresse: TMenuItem
+        Caption = 'IP Adresse'
+        object MenuAdressEinstellen: TMenuItem
+          Caption = 'Einstellen'
+          OnClick = MenuAdressEinstellenClick
+        end
+      end
+      object MenuVerbinden: TMenuItem
+        Caption = 'Verbinden'
+        OnClick = MenuVerbindenClick
+      end
+      object MenuTrennen: TMenuItem
+        Caption = 'Trennen'
+        OnClick = MenuTrennenClick
+      end
+      object MenuServerClose: TMenuItem
+        Caption = 'Beenden'
+        OnClick = MenuServerCloseClick
+      end
+    end
+    object MenuMenue: TMenuItem
+      Caption = 'Menü'
+      object MenuArtikel: TMenuItem
+        Caption = 'Artikel'
+        object MenuHinzufuegen: TMenuItem
+          Caption = 'Hinzufügen'
+          OnClick = MenuHinzufuegenClick
+        end
+        object MenuLoeschen: TMenuItem
+          Caption = 'Löschen'
+          OnClick = MenuLoeschenClick
+        end
+        object MenuZeigen: TMenuItem
+          Caption = 'Zeigen'
+          OnClick = MenuZeigenClick
+        end
+      end
+    end
+    object MenuX: TMenuItem
+      Caption = 'X'
+      OnClick = MenuXClick
+    end
+  end
+end
